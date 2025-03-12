@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 3px 3px 3px ;
+    border-radius: 5px;
+    padding: 4rem;
+    width: 75%;
+    justify-content: space-around;
+}
+
+.team {
+    color: darkblue;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.home-board-title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.home-board {
+    background: black;
+    min-height: 40%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-points-text {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.add-points-btns-home {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.button {
+    border: 1px solid cyan;
+    border-radius: 5px;
+    color: cyan;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: darkblue;
+    border: 1px solid darkblue;
+    color: white;
+}
+
+.new-game-btn {
+    display: block;
+    margin-top: 2rem;
+    padding: 1.2rem;
+    width: 70%;
+    background: green;
+    outline: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    justify-self: center;
+    align-self: center;
+}
+
+.new-game-btn:hover {
+    background-color: white;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid black;
+        box-shadow: 3px 3px 3px ;
+        border-radius: 5px;
+        padding: 4rem;
+        width: 75%;
+        justify-content: space-around;
+    }
+
+    .home-board {
+        min-height: 70%;
+        max-width: 50%;
+    }
+}
+ 
